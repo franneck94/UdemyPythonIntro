@@ -7,6 +7,8 @@ launch.json
 tasks.json
 .benchmarks/
 
+Chapter1_Intro/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
