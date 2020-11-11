@@ -1,8 +1,12 @@
+# Libraries
 matplotlib
 numpy
 
-mypy
+# Linting/Tooling
 pylint
 flake8
-black
+mypy
 isort
+black
+autopep8
+pre-commit
