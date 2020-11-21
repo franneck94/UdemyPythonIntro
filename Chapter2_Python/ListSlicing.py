@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 
+
 x = [[1, 4, 3, 9],
      [3, 1, 5, 2]]
 
@@ -23,6 +24,7 @@ w_squared = [val**2 for val in w[1:5]]
 print(w_squared)
 
 import numpy as np
+
 
 w = np.array([1, 3, 6, 9, 7, 4])
 print(w)

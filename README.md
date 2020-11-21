@@ -5,8 +5,8 @@ Dies ist der Code zu meinem Udemy Kurs:
 
 ## Bewertungen von Kursteilnehmern
 
-- "Sehr gut erklärt. Top Referent kommt aus der Praxis." (★★★★★  von Lothar Plappert)  
-- "Die Basics gut und knapp erklärt, nicht zu viel, nicht zu wenig, genau richtig! Weiter so!."(★★★★★ Eric Herrmann)  
+- "Sehr gut erklärt. Top Referent kommt aus der Praxis." (★★★★★  von Lothar Plappert)
+- "Die Basics gut und knapp erklärt, nicht zu viel, nicht zu wenig, genau richtig! Weiter so!."(★★★★★ Eric Herrmann)
 - "Für einen kostenlosen Einsteigerkurs absolut perfekt.." (★★★★★ von Sebastian Erdmann)
 
 ## Kursbeschreibung
