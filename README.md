@@ -1,7 +1,10 @@
 # Schnelleinstieg in die Python Programmierung für Einsteiger
 
 Dies ist der Code zu meinem Udemy Kurs:
-[*Schnelleinstieg in die Python Programmierung für Einsteiger*](https://www.udemy.com/course/2539402) von Jan Schaffranek.
+*Schnelleinstieg in die Python Programmierung für Einsteiger* von Jan Schaffranek.
+
+Erhalte den Kurs vom 01.12.2020 bis zum 31.12.2020 zum aktuellen Bestpreis.
+Rabatt-Link: [PythonIntro Kurs im Rabatt](https://www.udemy.com/course/schnelleinstieg-in-die-python-programmierung-fur-anfanger/?couponCode=FRANNECK_DEC_2020)
 
 ## Bewertungen von Kursteilnehmern
 
