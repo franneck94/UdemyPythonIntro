@@ -8,9 +8,11 @@ Rabatt-Link: [PythonIntro Kurs im Rabatt](https://www.udemy.com/course/schnellei
 
 ## Bewertungen von Kursteilnehmern
 
-- "Sehr gut erklärt. Top Referent kommt aus der Praxis." (★★★★★  von Lothar Plappert)
-- "Die Basics gut und knapp erklärt, nicht zu viel, nicht zu wenig, genau richtig! Weiter so!."(★★★★★ Eric Herrmann)
-- "Für einen kostenlosen Einsteigerkurs absolut perfekt.." (★★★★★ von Sebastian Erdmann)
+⭐⭐⭐⭐⭐ "Sehr gut erklärt. Top Referent kommt aus der Praxis." (Lothar Plappert)
+
+⭐⭐⭐⭐⭐ "Die Basics gut und knapp erklärt, nicht zu viel, nicht zu wenig, genau richtig! Weiter so!" (Eric Herrmann)
+
+⭐⭐⭐⭐⭐ "Für einen kostenlosen Einsteigerkurs absolut perfekt.." (Sebastian Erdmann)
 
 ## Kursbeschreibung
 
@@ -20,9 +22,12 @@ Ebenfalls werde ich dir eine einstündige Einführung in die wichtigsten Feature
 
 ## Dieser Kurs besteht aus folgenden Themengebieten
 
-- Python und Anaconda Installation
-- Erstellen von Python Environments
-- Verwendung der IDE: Visual Studio Code
-- Die Grundlagen der Python Programmierung
+☑️ Python und Anaconda Installation  
+☑️ Erstellen von Python Environments  
+☑️ Verwendung der IDE: Visual Studio Code  
+☑️ Die Grundlagen der Python Programmierung  
 
 Werde noch heute ein Profi, in der Technologie von Morgen! Wir sehen uns im Kurs!
+
+
+\* Alle Angaben ohne Gewähr
