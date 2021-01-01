@@ -3,7 +3,7 @@
 Dies ist der Code zu meinem Udemy Kurs:
 *Schnelleinstieg in die Python Programmierung für Einsteiger* von Jan Schaffranek.
 
-Erhalte den Kurs vom 01.12.2020 bis zum 31.12.2020 zum aktuellen Bestpreis.
+Der aktuelle Rabatt-Code lautet: FRANNECK_JAN_2021.
 Rabatt-Link: [PythonIntro Kurs im Rabatt](https://www.udemy.com/course/schnelleinstieg-in-die-python-programmierung-fur-anfanger/?couponCode=FRANNECK_JAN_2021)
 
 ## Bewertungen von Kursteilnehmern
