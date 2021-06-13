@@ -1,6 +1,8 @@
 # Libraries
 matplotlib
 numpy
+ipython
+ipykernel
 
 # Linting/Tooling
 pylint
