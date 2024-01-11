@@ -1,8 +1,7 @@
 """Exercise 2:
 1.)
-Write code that takes a list of integer numbers and one
-integer number "a" and prints the index of the number
-if its in the list.
+Write code that uses a list of integer and one integer number "a".
+There you should print the index where the number is present in the list.
 
 2.)
 Write code that takes two integers (x, y) computes the following:
