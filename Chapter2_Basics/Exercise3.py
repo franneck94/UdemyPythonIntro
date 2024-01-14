@@ -10,11 +10,11 @@ of the dictionary "d" and only print the name of the students.
 """
 
 
-def exercise1(dct):
+def exercise1(dct):  # noqa: ARG001
     pass
 
 
-def exercise2(dct):
+def exercise2(dct):  # noqa: ARG001
     pass
 
 

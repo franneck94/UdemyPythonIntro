@@ -12,7 +12,7 @@ if my_var < 100 and my_var > 0:  # (0, 100)
 else:
     print("no")
 
-if not(my_var < 100 and my_var > 0):  # (-inf, 0] or [100, inf)
+if not (my_var < 100 and my_var > 0):  # (-inf, 0] or [100, inf)
     print("yes")
 else:
     print("no")

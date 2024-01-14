@@ -13,7 +13,7 @@ E.g. Student('Jan', 'Schaffranek', 27, 1080133228459) will print:
 
 
 class Student:
-    pass
+    pass  # noqa: PIE790
 
     def print_student(self):
         pass
