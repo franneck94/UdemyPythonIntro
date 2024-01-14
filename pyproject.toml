@@ -1,9 +1,9 @@
 [tool.black]
-target-version = ['py311']
+target-version = ['py310']
 line-length = 80
 skip-string-normalization = false
 skip-magic-trailing-comma = false
-extend-exclude = '''
+force-exclude = '''
 /(
   | docs
   | setup.py
@@ -11,7 +11,7 @@ extend-exclude = '''
 '''
 
 [tool.isort]
-py_version = 311
+py_version = 310
 sections = [
     "FUTURE",
     "STDLIB",
@@ -19,29 +19,8 @@ sections = [
     "FIRSTPARTY",
     "LOCALFOLDER"
 ]
-default_section = "FIRSTPARTY"
-known_third_party = [
-    "numpy",
-    "pandas",
-    "keras",
-    "tensorflow",
-    "sklearn",
-    "matplotlib",
-    "scipy",
-    "h5py",
-    "seaborn",
-    "numba",
-    "gym",
-    "PyQt5",
-    "PyQt6",
-    "pyqtgraph",
-    "torch",
-    "tqdm",
-    "cv2",
-    "skimage",
-    "tensorcross",
-    "tensorflow_datasets"
-]
+default_section = "THIRDPARTY"
+known_third_party = []
 known_first_party = []
 known_local_folder = []
 # style: black
@@ -58,62 +37,35 @@ skip_glob = [
   "docs/*",
   "setup.py"
 ]
-
-[tool.mypy]
-# Platform configuration
-python_version = "3.11"
-# imports related
-ignore_missing_imports = true
-follow_imports = "silent"
-# None and Optional handling
-no_implicit_optional = false
-strict_optional = false
-# Configuring warnings
-warn_unused_configs = true
-warn_redundant_casts = true
-warn_unused_ignores = true
-warn_no_return = true
-warn_unreachable = true
-warn_return_any = false
-# Untyped definitions and calls
-check_untyped_defs = false
-disallow_untyped_calls = false
-disallow_untyped_defs = false
-disallow_incomplete_defs = false
-disallow_untyped_decorators = false
-# Disallow dynamic typing
-disallow_subclassing_any = false
-disallow_any_unimported = false
-disallow_any_expr = false
-disallow_any_decorated = false
-disallow_any_explicit = false
-disallow_any_generics = false
-# Miscellaneous strictness flags
-allow_untyped_globals = true
-allow_redefinition = true
-local_partial_types = false
-implicit_reexport = true
-strict_equality = true
-# Configuring error messages
-show_error_context = false
-show_column_numbers = false
-show_error_codes = true
-exclude = ["examples"]
+filter_files = true
 
 [tool.ruff]
-target-version = "py311"
+target-version = "py310"
 select = ["F", "E"]
-extend-select = ["W", "I", "B", "A", "PLE", "PLW", "RUF"]
-ignore = ["I001", "B905"]
-fixable = ["F", "E", "W"]
+extend-select = ["W", "C90", "I", "N", "UP", "YTT", "ANN", "ASYNC", "BLE", "B", "A", "COM", "C4", "EXE", "FA", "ISC", "ICN", "INP", "PIE", "PYI", "PT", "Q", "RSE", "RET", "SLF", "SLOT", "SIM", "TID", "TCH", "INT", "ARG", "PTH", "TD", "FIX", "PD", "PL", "TRY", "FLY", "NPY", "PERF", "FURB", "RUF", "TRIO"]
+ignore = ["I001", "ANN401", "SIM300", "PERF203", "ANN101", "B905", "NPY002", "COM812", "N999", "PTH", "INP001", "TRY003", "PLW1641", "E203", "PLW1514"]
+fixable = ["W", "C90", "I", "N", "UP", "YTT", "ANN", "ASYNC", "BLE", "B", "A", "COM", "C4", "EXE", "FA", "ISC", "ICN", "INP", "PIE", "PYI", "PT", "Q", "RSE", "RET", "SLF", "SLOT", "SIM", "TID", "TCH", "INT", "ARG", "PTH", "TD", "FIX", "PD", "PL", "TRY", "FLY", "NPY", "PERF", "FURB", "RUF", "TRIO"]
 unfixable = []
 line-length = 80
-extend-exclude = ["tests", "test"]
+indent-width = 4
+extend-exclude = ["docs", "test", "tests"]
 dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+[tool.ruff.lint]
+preview = true
 [tool.ruff.isort]
 force-single-line = true
 force-sort-within-sections = false
 lines-after-imports = 2
+known-first-party = []
+known-local-folder = []
+known-third-party = []
+section-order = [
+    "future",
+    "standard-library",
+    "third-party",
+    "first-party",
+    "local-folder"
+]
 [tool.ruff.mccabe]
 max-complexity = 24
 [tool.ruff.pycodestyle]
@@ -128,26 +80,70 @@ quote-style = "double"
 indent-style = "space"
 skip-magic-trailing-comma = false
 line-ending = "auto"
+preview = false
+docstring-code-format = true
+
+[tool.mypy]
+# Platform configuration
+python_version = "3.10"
+# imports related
+ignore_missing_imports = true
+follow_imports = "silent"
+# None and Optional handling
+no_implicit_optional = true
+strict_optional = true
+# Configuring warnings
+warn_unused_configs = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_unreachable = true
+warn_return_any = false
+# Untyped definitions and calls
+check_untyped_defs = true
+disallow_untyped_calls = false
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+disallow_untyped_decorators = false
+# Disallow dynamic typing
+disallow_subclassing_any = true
+disallow_any_unimported = false
+disallow_any_expr = false
+disallow_any_decorated = false
+disallow_any_explicit = false
+disallow_any_generics = false
+# Miscellaneous strictness flags
+allow_untyped_globals = false
+allow_redefinition = false
+local_partial_types = false
+implicit_reexport = true
+strict_equality = true
+# Configuring error messages
+show_error_context = false
+show_column_numbers = false
+show_error_codes = true
+exclude = ["docs", "test", "tests"]
 
 [tool.pyright]
-pythonVersion = "3.11"
+pythonVersion = "3.10"
 typeCheckingMode = "basic"
 # enable subset of "strict"
 reportDuplicateImport = true
 reportInvalidStubStatement = true
-reportOverlappingOverload = false
+reportOverlappingOverload = true
 reportPropertyTypeMismatch = true
 reportUntypedClassDecorator = false
-reportUntypedFunctionDecorator = false
-reportUntypedNamedTuple = false
-reportUnusedImport = false
+reportUntypedFunctionDecorator = true
+reportUntypedNamedTuple = true
+reportUnusedImport = true
 # disable subset of "basic"
-reportGeneralTypeIssues = false
+reportGeneralTypeIssues = true
 reportMissingModuleSource = false
-reportOptionalCall = false
-reportOptionalIterable = false
-reportOptionalMemberAccess = false
-reportOptionalOperand = false
-reportOptionalSubscript = false
-reportPrivateImportUsage = false
+reportOptionalCall = true
+reportOptionalIterable = true
+reportOptionalMemberAccess = true
+reportOptionalOperand = true
+reportOptionalSubscript = true
+reportPrivateImportUsage = true
 reportUnboundVariable = true
+exclude = ["docs", "setup.py"]
