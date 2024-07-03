@@ -134,6 +134,6 @@ venv.bak/
 ################################
 ########### VS CODE ############
 ################################
-.vscode
+.vscode/settings.json
 *.code-workspace
 .history
