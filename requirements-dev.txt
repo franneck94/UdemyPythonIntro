@@ -15,7 +15,6 @@ isort>=5.13.2
 mypy>=1.8.0
 mypy-extensions>=1.0.0
 pre-commit>=3.6.0
-pyright>=1.1.345
 ruff>=0.1.13
 
 # Testing

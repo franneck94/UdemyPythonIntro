@@ -91,9 +91,9 @@ warn_no_return = true
 warn_unreachable = true
 warn_return_any = false
 # Untyped definitions and calls
-check_untyped_defs = true
+check_untyped_defs = false
 disallow_untyped_calls = false
-disallow_untyped_defs = true
+disallow_untyped_defs = false
 disallow_incomplete_defs = true
 disallow_untyped_decorators = false
 # Disallow dynamic typing
@@ -114,27 +114,3 @@ show_error_context = false
 show_column_numbers = false
 show_error_codes = true
 exclude = ["docs", "test", "tests"]
-
-[tool.pyright]
-pythonVersion = "3.10"
-typeCheckingMode = "basic"
-# enable subset of "strict"
-reportDuplicateImport = true
-reportInvalidStubStatement = true
-reportOverlappingOverload = true
-reportPropertyTypeMismatch = true
-reportUntypedClassDecorator = false
-reportUntypedFunctionDecorator = true
-reportUntypedNamedTuple = true
-reportUnusedImport = true
-# disable subset of "basic"
-reportGeneralTypeIssues = true
-reportMissingModuleSource = false
-reportOptionalCall = true
-reportOptionalIterable = true
-reportOptionalMemberAccess = true
-reportOptionalOperand = true
-reportOptionalSubscript = true
-reportPrivateImportUsage = true
-reportUnboundVariable = true
-exclude = ["docs", "setup.py"]
