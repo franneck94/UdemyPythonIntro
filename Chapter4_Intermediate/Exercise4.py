@@ -10,11 +10,11 @@ the current index and the current value in each iteration.
 """
 
 
-def exercise1(n):  # noqa: ARG001
+def exercise1(n):
     pass
 
 
-def exercise2(lst):  # noqa: ARG001
+def exercise2(lst):
     pass
 
 

@@ -17,7 +17,7 @@ for val in l1:
     print(val)
 
 
-def print_list(l1):  # noqa: ARG001
+def print_list(l1):
     pass
 
 
