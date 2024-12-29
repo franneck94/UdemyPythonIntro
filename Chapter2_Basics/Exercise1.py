@@ -7,7 +7,7 @@ Write code that chekcs the integer **number**
 
 2.)
 Write code that takes two floats x, y and computes:
-- x*x + x*y + y*y
+x*x + x*y + y*y
 """
 
 # exercise1
